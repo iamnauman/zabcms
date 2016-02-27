@@ -9,4 +9,20 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+   <servlet-name>fileuploader</servlet-name>
+   <servlet-class>fileuploader</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>fileuploader</servlet-name>
+   <url-pattern>/fileuploader</url-pattern>
+</servlet-mapping>
+  <context-param> 
+    <description>Location to store uploaded file</description> 
+    <param-name>file-upload</param-name> 
+    <param-value>
+         D:\Downloads\Documents\zabcms project\File Store base
+     </param-value> 
+</context-param>
 </web-app>
