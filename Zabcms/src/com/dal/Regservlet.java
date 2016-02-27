@@ -38,7 +38,7 @@ public class Regservlet extends HttpServlet {
 		um.setPassword(password);
 		Userdao uDao = new Userdao(getServletContext());
 		if(uDao.addUser(um)){
-			dis = request.getRequestDispatcher("index.html");
+			dis = request.getRequestDispatcher("register.html");
 			dis.forward(request, response);
 			System.out.println("Registered");
 		}
