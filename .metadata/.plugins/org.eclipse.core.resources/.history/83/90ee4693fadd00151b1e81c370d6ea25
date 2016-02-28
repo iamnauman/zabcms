@@ -22,7 +22,7 @@
     <description>Location to store uploaded file</description> 
     <param-name>file-upload</param-name> 
     <param-value>
-         D:\Downloads\Documents\zabcms project\db
+         D:\Downloads\Documents\zabcms project\File Store base
      </param-value> 
 </context-param>
 </web-app>
