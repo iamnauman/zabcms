@@ -54,3 +54,6 @@
 127.0.0.1 - - [28/Feb/2016:14:06:55 +0500] "GET / HTTP/1.1" 404 994
 0:0:0:0:0:0:0:1 - - [28/Feb/2016:14:06:55 +0500] "GET /Zabcms/WEB-INF/web.xml HTTP/1.1" 404 992
 0:0:0:0:0:0:0:1 - - [28/Feb/2016:14:07:04 +0500] "GET /Zabcms/fupload.jsp HTTP/1.1" 200 525
+0:0:0:0:0:0:0:1 - - [28/Feb/2016:14:17:45 +0500] "POST /Zabcms/UploadServlet HTTP/1.1" 500 3529
+0:0:0:0:0:0:0:1 - - [28/Feb/2016:14:17:52 +0500] "POST /Zabcms/UploadServlet HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [28/Feb/2016:14:18:15 +0500] "POST /Zabcms/UploadServlet HTTP/1.1" 404 992
