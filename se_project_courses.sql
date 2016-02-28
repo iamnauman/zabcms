@@ -16,33 +16,30 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `useraccount`
+-- Table structure for table `courses`
 --
 
-DROP TABLE IF EXISTS `useraccount`;
+DROP TABLE IF EXISTS `courses`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `useraccount` (
-  `email` varchar(255) NOT NULL,
-  `password` varchar(32) NOT NULL,
-  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `full_name` varchar(255) NOT NULL,
-  `username` varchar(225) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `id_UNIQUE` (`id`),
-  UNIQUE KEY `username_UNIQUE` (`username`),
-  UNIQUE KEY `email_UNIQUE` (`email`)
+CREATE TABLE `courses` (
+  `coursenumber` varchar(45) NOT NULL,
+  `coursename` varchar(45) NOT NULL,
+  `documents` longblob,
+  `videolectures` longblob,
+  PRIMARY KEY (`coursenumber`),
+  UNIQUE KEY `course id_UNIQUE` (`coursenumber`),
+  UNIQUE KEY `coursename_UNIQUE` (`coursename`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `useraccount`
+-- Dumping data for table `courses`
 --
 
-LOCK TABLES `useraccount` WRITE;
-/*!40000 ALTER TABLE `useraccount` DISABLE KEYS */;
-/*!40000 ALTER TABLE `useraccount` ENABLE KEYS */;
+LOCK TABLES `courses` WRITE;
+/*!40000 ALTER TABLE `courses` DISABLE KEYS */;
+/*!40000 ALTER TABLE `courses` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
