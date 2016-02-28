@@ -13,8 +13,8 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.output.*;
 
 
-@WebServlet("/fileuploader")
-public class fileuploader extends HttpServlet {
+//@WebServlet("/fileuploader")
+public class UploadServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 //file size 52428800        
 	private boolean isMultipart;
@@ -22,7 +22,7 @@ public class fileuploader extends HttpServlet {
 	private int maxFileSize= 52428800;
 	private int maxMemSize= 4194304;
     private File file;
-    private  fileuploader() {
+    private  UploadServlet() {
         super();
         
     }
