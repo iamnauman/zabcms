@@ -8,15 +8,6 @@ public class Userdto {
 	        private String password;
 	        private String email;
 	        private String createDate;
-			public Userdto() {
-			
-			}
-			public Userdto(String username, String password){
-				this.username=username;
-				
-				this.password=password;
-				
-			}
 			public String getFull_name() {
 				return fullname;
 			}

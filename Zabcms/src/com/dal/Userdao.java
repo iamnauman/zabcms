@@ -14,7 +14,7 @@ public class Userdao {
 		public int create() {
 			Connection conn = null;
 			PreparedStatement stmt = null;
-            ResultSet resultSet =null;
+            
 			try {
 				conn = databaseController.getConnection();
 				stmt = conn.prepareStatement("insert into users(username,password,email,fullname) values(?,?,?,?)");
@@ -91,22 +91,7 @@ public class Userdao {
 				databaseController.close(result, stmt, conn);
 			}
 		}
-		 protected boolean validUser(String username, String password) {
-			    boolean valid = false;
-			    if ((username != null) && (username.length() > 0)) {
-			      valid = username.equals(password);
-			    }
 
-			    return valid;
-			  }
-			
 	}
-				
-			
-
-				
-			
-
-	
 
 

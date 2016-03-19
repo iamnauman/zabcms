@@ -9,7 +9,7 @@ public class Database_Controller {
 	static final String PASS = "faizan";
 	
 	//override default constructor to prevent object creation
-private Database_Controller(){}
+	private Database_Controller(){}
 
 	//Singleton access to Database Controller
 	public static Database_Controller getDatabase_Controller(){
@@ -61,7 +61,7 @@ private Database_Controller(){}
 	}
 
 	@Override
-protected Object clone() throws CloneNotSupportedException {
+	protected Object clone() throws CloneNotSupportedException {
 		return Database_Controller;
 	}
 	
